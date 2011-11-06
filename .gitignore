@@ -1,0 +1,8 @@
+db/*.sqlite3
+log/
+tmp/
+config/*.conf
+config/*.ini
+public/stylesheets/
+public/system/
+.bundle
