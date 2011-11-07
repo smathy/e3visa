@@ -3,6 +3,6 @@ log/
 tmp/
 config/*.conf
 config/*.ini
-public/stylesheets/
 public/system/
+public/assets/
 .bundle
