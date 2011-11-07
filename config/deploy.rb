@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+
 set :application, 'e3visa'
 set :repository, `git config --get remote.origin.url`.chomp
 
