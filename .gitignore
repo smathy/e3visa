@@ -1,8 +1,6 @@
 db/*.sqlite3
 log/
 tmp/
-config/*.conf
-config/*.ini
 public/system/
 public/assets/
 .bundle
