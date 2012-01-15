@@ -29,6 +29,8 @@ group :development do
   gem 'capistrano', '>2.8'
 end
 
+gem "haml-rails"
+
 # To use debugger
 # gem 'ruby-debug'
 
