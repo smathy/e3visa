@@ -1,5 +1,5 @@
 E3visaMe::Application.routes.draw do
-  match 'site/:action', :controller => 'site', :via => :get
+  match ':action', :controller => 'site', :via => :get
   root :to => 'site#index'
 
   # The priority is based upon order of creation:
