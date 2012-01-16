@@ -14,21 +14,10 @@
   <img src="/assets/arrow_gif.gif" width="273" height="114">
 </div>
 
-<p style="text-align: center">&nbsp;</p>
 <p>
-  <strong>Date:</strong>
-  <script language="Javascript">
-    var dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
-
-    var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
-
-    var now = new Date
-
-    document.write(" " + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " "+now.getDate() +"")
-  </script>
-  &nbsp;<br>
+<strong>Date:</strong> <%= letter_date %><br>
 <strong>Location:</strong> California, USA<br>
-<strong>From:</strong> Sinead</p>
+<strong>From:</strong> Sinéad</p>
 
 <img class="salutation" src="/assets/dearfriend.png" width="250" height="75">
 
@@ -90,56 +79,45 @@ questions...</p>
 
 <img src="/assets/text_04.png" width="720" height="208">
 
-<form action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/625302981979048" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
-  <input name="item_name_1" type="hidden" value="Moving to the USA"/>
-  <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
-  <input name="item_quantity_1" type="hidden" value="1"/>
-  <input name="item_price_1" type="hidden" value="37.99"/>
-  <input name="item_currency_1" type="hidden" value="USD"/>
-  <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-  <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
-  <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
-  <input name="_charset_" type="hidden" value="utf-8"/>
-  <p style="text-align: center">
-  <input type="image" src="/assets/bookcover1.jpg" width="400" height="671"></p>
-</form>
-<p>
-This is your <b>ultimate guide</b>
-for asking, getting, and making the most of your “moving to USA” experiences.</p>
-<p>
-With this guide, you can take the uncertainty, risks, stress and confusion
-out of your move to the USA. This is the single biggest source of helpful
-and useful information that you’re going to find in your quest to move to
-America -- guaranteed.<br>
-<br>
-Would you go on a long, difficult and important road trip without a map? Of
-course you wouldn’t, because the cost of failure is just too great.<br>
-<br>
-Why not have a <b>detailed</b> and <b>accurate</b> US immigration map? A map
-that shows you the way <b>from start to finish</b>. A map that tells you
-what you should do and when.<br>
-<br>
-A map that lets you know where there is danger as well as opportunity. A map
-that provides a solution to every US immigration problem.<br>
-<br>
-Sure you can get involved with immigration advisors, lawyers and relocation
-agents, but they <b>charge thousands of dollars</b> for information that you
-can get right here, right now. The days of innocent, uninformed migrants
-being ripped off have now come to an end - but only for someone like you who
-knows about this guide.<br>
-<br>
-A guide that many people wished existed before they moved over rather than
-having to learn everything the hard and expensive way.<br>
-<br>
-“<b>Moving To The USA</b>” equips you with the <u>knowledge</u> and <u>
-  skills</u> you need to emigrate to and successfully settle in any part of
-the United States. Whether it be Washington, New York, Los Angeles or Las
-Vegas, the system is the same.<br>
-<br>
-With this guide you get more than the “what to do”, but most importantly,
-you get the “how, when, where, who and why” of emigrating to the States. </p>
-<p>
-Inside this guidebook, you will discover the answers to questions like...</p>
+<%= google_checkout "bookcover1.jpg" %>
+
+<p>This is your <b>ultimate guide</b> for asking, getting, and making the most
+of your “moving to USA” experiences.</p>
+
+<p>With this guide, you can take the uncertainty, risks, stress and confusion
+out of your move to the USA. This is the single biggest source of helpful and
+useful information that you’re going to find in your quest to move to America --
+guaranteed.</p>
+
+<p>Would you go on a long, difficult and important road trip without a map? Of
+course you wouldn’t, because the cost of failure is just too great.</p>
+
+<p>Why not have a <b>detailed</b> and <b>accurate</b> US immigration map? A map
+that shows you the way <b>from start to finish</b>. A map that tells you what
+you should do and when.</p>
+
+<p>A map that lets you know where there is danger as well as opportunity. A map
+that provides a solution to every US immigration problem.</p>
+
+<p>Sure you can get involved with immigration advisors, lawyers and relocation
+agents, but they <b>charge thousands of dollars</b> for information that you can
+get right here, right now. The days of innocent, uninformed migrants being
+ripped off have now come to an end - but only for someone like you who knows
+about this guide.</p>
+
+<p>A guide that many people wished existed before they moved over rather than
+having to learn everything the hard and expensive way.</p>
+
+<p>“<b>Moving To The USA</b>” equips you with the <u>knowledge</u> and <u>
+  skills</u> you need to emigrate to and successfully settle in any part of the
+United States. Whether it be Washington, New York, Los Angeles or Las Vegas, the
+system is the same.</p>
+
+<p>With this guide you get more than the “what to do”, but most importantly, you
+get the “how, when, where, who and why” of emigrating to the States. </p>
+
+<p>Inside this guidebook, you will discover the answers to questions like...</p>
+
 <ul class="spaced">
   <li><b>Which US visa do you qualify for?</b></li>
   <li>What’s the best way to organise yourself before leaving for the UK?</li>
@@ -151,205 +129,151 @@ Inside this guidebook, you will discover the answers to questions like...</p>
   <li><b>What is the true cost of living there? What to expect?</b></li>
   <li>And many, many more!</li>
 </ul>
-<p>
-Yes, there have been hurdles, differences and frustrations, which is the
+
+<p>Yes, there have been hurdles, differences and frustrations, which is the
 reason I am writing this guidebook. Had I known two years ago all the things I
-know now or simply been able to ask someone a question, the move would have
-been even <b>a lot easier</b> and I would have saved <b>a lot of time</b>.</p>
-<p style="text-align: center">
-<img src="/assets/family_niagarafalls.jpg" width="648" height="329"></p>
-<p style="text-align: center">
-<img src="/assets/text_05.png" width="720" height="162"></p>
-<p>
-&nbsp;</p>
-<p>
-Hey, that’s a good question.</p>
-<p>
-But, allow me to rephrase it for you...</p>
-<p>
-<b>“How much this guidebook will help you change your life?”</b></p>
-<p>
-Think about how much the information will help you save thousands of
-dollars... Think about how much the information will help you save enormous
-time and headaches while you’re in the US -- headaches that can go on for
-years!</p>
-<p>
-&nbsp;</p>
-<p style="text-align: center">
-<img src="/assets/headache.jpg" width="500" height="301"></p>
-<p>
-&nbsp;</p>
-<p>
-You don’t want that, do you?</p>
-<p>
-Moving to another country can be tough, I know that, but you have me on your
+know now or simply been able to ask someone a question, the move would have been
+even <b>a lot easier</b> and I would have saved <b>a lot of time</b>.</p>
+
+<img src="/assets/family_niagarafalls.jpg" width="648" height="329">
+<img src="/assets/text_05.png" width="720" height="162">
+
+<p>Hey, that’s a good question.</p>
+
+<p>But, allow me to rephrase it for you...</p>
+
+<p><b>“How much this guidebook will help you change your life?”</b></p>
+
+<p>Think about how much the information will help you save thousands of
+dollars... Think about how much the information will help you save enormous time
+and headaches while you’re in the US -- headaches that can go on for years!</p>
+
+<img src="/assets/headache.jpg" width="500" height="301">
+
+<p>You don’t want that, do you?</p>
+
+<p>Moving to another country can be tough, I know that, but you have me on your
 side. You can hold my hands and I will take you there... to United States!</p>
-<p>
-I will walk you through one step at a time, so you can have an <b>enjoyable
+
+<p>I will walk you through one step at a time, so you can have an <b>enjoyable
   experience</b>, and an interesting story to <b>share with your grandchildren!</b></p>
-<p>
-<b>Why isn’t this all free, you ask?</b><br>
-<br>
-Why charge a price for information in the ’Information Age’ where most things
+
+<p><b>Why isn’t this all free, you ask?</b></p>
+
+<p>Why charge a price for information in the ’Information Age’ where most things
 are free? Well, this work is of value, whilst what is often freely available on
-the Internet isn’t really of value.  </p>
-<p>
-Restricting yourself to “free” information
+the Internet isn’t really of value.</p>
+
+<p>Restricting yourself to “free” information
 means you’re equipping yourself to compete with the hordes of people who
 have the same free information. I believe <u>better</u> <u>knowledge</u> can only ever lead to
-superior results.<br>
-<br>
-Furthermore, something gained for free is often not appreciated and ends up
+superior results.</p>
+
+<p>Furthermore, something gained for free is often not appreciated and ends up
 being discarded. It would also be cruel and wrong to get people without
 money excited about the prospect of a better life. Also, my time is of value
 and it’s only <u>fair</u> that I get something back for my time spent constantly
 updating the guide, administering this site and answering emails.</p>
-<p>
-<b>How does the payment process work?</b><br>
-<br>
-When you click on a payment link, you’ll be redirected to a secure page
+
+<p><b>How does the payment process work?</b></p>
+
+<p>When you click on a payment link, you’ll be redirected to a secure page
 where you enter your credit or debit card details. This service, provided by
 the e-commerce giants, PayPal and Clickbank, uses the latest 128-bit
 patented security technology which would take all the computers in America
 running continuously for 4,000 years to crack. It also allows for a smooth,
 quick and safe transaction. I don’t get to see your card details and neither
 does anyone at PayPal or ClickBank. Their computers delete the few details
-you give after 24 hours.<br>
-<br>
-When making payment, please note: Your card “validation code” is the 3
+you give after 24 hours.</p>
+
+<p>When making payment, please note: Your card “validation code” is the 3
 numbers after your card number on the magnetic strip on the back of the
-card.<br>
-<br>
-Once you’ve entered your details, these will be verified. Upon successful
+card.</p>
+
+<p>Once you’ve entered your details, these will be verified. Upon successful
 completion, a download page will appear. On this page, you can download the
-guidebook in PDF format along with the free bonuses.<br>
-<br>
-The whole process should take <b>less than 3 minutes</b>.<br>
-<br>
-There is no waiting for snail mail delivery, for things going missing or
+guidebook in PDF format along with the free bonuses.</p>
+
+<p>The whole process should take <b>less than 3 minutes</b>.</p>
+
+<p>There is no waiting for snail mail delivery, for things going missing or
 shipping charges involved. If you have any questions about the guide or this
 site, feel free to contact me at <%= contact_email %>.</p>
-<p>
-Not comfortable yet?</p>
-<p>
-All right then, allow me to remove any risk that you might face. If you’re still
+
+<p>Not comfortable yet?</p>
+
+<p>All right then, allow me to remove any risk that you might face. If you’re still
 sitting on the fence, let me tell you that <b>you have nothing to lose.</b></p>
+
 <p>Order a copy of “<i>Moving To The USA</i>” right now and read it through, from start to
 finish. And please, take your time. No need to rush. If you don’t like what you
 see, then all you have to do is send me an email so I can refund your money.</p>
-<p><b>No gimmicks. No lies. No worries.</b><br>
-</p>
 
-<form action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/625302981979048" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
-  <input name="item_name_1" type="hidden" value="Moving to the USA"/>
-  <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
-  <input name="item_quantity_1" type="hidden" value="1"/>
-  <input name="item_price_1" type="hidden" value="37.99"/>
-  <input name="item_currency_1" type="hidden" value="USD"/>
-  <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-  <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
-  <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
-  <input name="_charset_" type="hidden" value="utf-8"/>
-  <p style="text-align: center">
-  <input type="image" src="/assets/guarantee_certificate.png" width="605" height="455"></p>
-</form>
+<p><b>No gimmicks. No lies. No worries.</b></p>
 
-<p>And guess what... you even get to keep the guidebook should you be refunded!<br>
-<br>
-So basically, the risk is all mine. I’ve put time and effort in to writing the guide,
+<%= google_checkout "guarantee_certificate.png" %>
+
+<p>And guess what... you even get to keep the guidebook should you be refunded!</p>
+
+<p>So basically, the risk is all mine. I’ve put time and effort in to writing the guide,
 managing this website, etc. If you don’t like the guide, you get your money back
 and I lose all my time and effort. I’ll keep losing if my guide is rubbish.</p>
-<p>But
-it isn’t, so we’re both happy.<br>
-<br>
-My friends even say that one of chapters alone is worth several times more
+
+<p>But it isn’t, so we’re both happy.</p>
+
+<p>My friends even say that one of chapters alone is worth several times more
 than the asking price!</p>
-<p>And don’t think of this guide as a mere ebook. Remember instead that
-you are benefiting from <b>proven</b> <b>knowledge</b> and
-<b>effective</b> <b>solutions</b> to a myriad
-of common problems that you <b><u>WILL</u></b> most definitely encounter in
-the US.</p>
+
+<p>And don’t think of this guide as a mere ebook. Remember instead that you are
+benefiting from <b>proven</b> <b>knowledge</b> and <b>effective</b>
+<b>solutions</b> to a myriad of common problems that you <b><u>WILL</u></b> most
+definitely encounter in the US.</p>
+
 <p>There is no beating around the bush or hard sell with this 49-page guidebook.
 If you have got this far, then clearly there is something bugging you...</p>
-<p>There is something that you just have to know right now, am I correct?</p>
-<p>Then, what are you waiting for?</p>
-<p> <b>Get yourself a copy of “Moving To The USA” right now -- the price is </b>
-<strike>49.95</strike><b> $37.99 -- and see what you will
-  discover inside...</b></p>
 
-<form style="text-align:center" action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/625302981979048" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
-  <input name="item_name_1" type="hidden" value="Moving to the USA"/>
-  <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
-  <input name="item_quantity_1" type="hidden" value="1"/>
-  <input name="item_price_1" type="hidden" value="37.99"/>
-  <input name="item_currency_1" type="hidden" value="USD"/>
-  <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-  <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
-  <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
-  <input name="_charset_" type="hidden" value="utf-8"/>
-  <p style="text-align: center">
-  <input type="image" src="/assets/arrow_gif.gif" width="273" height="114">
-  </p>
+<p>There is something that you just have to know right now, am I correct?</p>
+
+<p>Then, what are you waiting for?</p>
+
+<p><b>Get yourself a copy of “Moving To The USA” right now -- the price is </b>
+<strike>49.95</strike><b> $37.99 -- and see what you will discover
+  inside...</b></p>
+
+<%= google_checkout "arrow_gif.gif" %>
+
   <p style="text-align: center">
   <b>Just </b><strike>$49.95</strike><b>
       $37.99</b></p>
-</form>
 
-<form style="text-align:center" action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/625302981979048" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
-  <input name="item_name_1" type="hidden" value="Moving to the USA"/>
-  <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
-  <input name="item_quantity_1" type="hidden" value="1"/>
-  <input name="item_price_1" type="hidden" value="37.99"/>
-  <input name="item_currency_1" type="hidden" value="USD"/>
-  <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-  <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
-  <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
-  <input name="_charset_" type="hidden" value="utf-8"/>
-  <p style="text-align: center">
-  <input alt="" src="https://checkout.google.com/buttons/buy.gif?merchant_id=625302981979048&amp;w=117&amp;h=48&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
-  </p>
-</form>
+<%= google_checkout %>
 
-<p style="text-align: center">
-<img src="/assets/text_07.png" width="720" height="218"></p>
-<p style="text-align: center">
-<img src="/assets/pack_your_bags.jpg" width="265" height="223"></p>
-<p style="text-align: center">
-&nbsp;</p>
-<p><strong style="font-weight: 400">Good luck to you and your family,</strong></p>
+<img src="/assets/text_07.png" width="720" height="218">
+<img src="/assets/pack_your_bags.jpg" width="265" height="223">
+
+<p>Good luck to you and your family,</p>
+
 <p><br>
 Sinead<br>
 <b>e3visa.me</b></p>
 <div id="gplus"><g:plusone annotation="inline"></g:plusone></div>
 
-<p><strong>P.S.</strong> <strong style="font-weight: 400">No one knows what is going
-  to happen... so why not have the guide that will prepare you for the future? It is always
-  </strong><strong>better to be prepared than sorry</strong><strong style="font-weight: 400">, no? Well, this
-  guide will tell you  </strong><strong><u>EVERYTHING</u></strong><strong style="font-weight: 400">
-  I know about moving to the States.</strong></p>
-<p><b>P.P.S.</b> Let me remind you again that I
-offer a  money back guarantee, so you have absolutely nothing to lose by reading
-it. If
-you don’t like the information you’re getting, then <b>I will refund every penny of
-  your money with no questions asked</b>. All the risk is on me.</p>
-<p>Read the guide and tell me what you think about it. Don’t risk coming back to this page and seeing this
+<p><strong>P.S.</strong> No one knows what is going to happen... so why not have
+the guide that will prepare you for the future? It is always <strong>better to
+  be prepared than sorry</strong>, no? Well, this guide will tell you
+<strong><u>EVERYTHING</u></strong> I know about moving to the States.</p>
+
+<p><b>P.P.S.</b> Let me remind you again that I offer a  money back guarantee,
+so you have absolutely nothing to lose by reading it. If you don’t like the
+information you’re getting, then <b>I will refund every penny of your money with
+  no questions asked</b>. All the risk is on me.</p> <p>Read the guide and tell
+me what you think about it. Don’t risk coming back to this page and seeing this
 big, red sign...</p>
-<p style="text-align: center"><img src="/assets/closed.png" width="429" height="297"></p>
+
+<img src="/assets/closed.png" width="429" height="297">
+
 <p>So, claim the copy of “<i>Moving To USA</i>” right now. Don't hesitate and regret making the
 <b>best decision of your life today</b>. Because...</p>
 
-<form style="text-align:center" action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/625302981979048" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
-  <input name="item_name_1" type="hidden" value="Moving to the USA"/>
-  <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
-  <input name="item_quantity_1" type="hidden" value="1"/>
-  <input name="item_price_1" type="hidden" value="37.99"/>
-  <input name="item_currency_1" type="hidden" value="USD"/>
-  <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-  <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
-  <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
-  <input name="_charset_" type="hidden" value="utf-8"/>
-  <p style="text-align: center">
-  <input alt="" src="https://checkout.google.com/buttons/buy.gif?merchant_id=625302981979048&amp;w=117&amp;h=48&amp;style=white&amp;variant=text&amp;loc=en_US" type="image"/>
-  </p>
-</form>
+<%= google_checkout %>
 

@@ -75,3 +75,15 @@ iframe {
 ul.spaced li {
   line-height: 200%;
 }
+
+.acrobat_reader {
+  margin: 0 auto;
+  margin-right: 0;
+  width: 16em;
+}
+
+.acrobat_reader img {
+  float: left;
+  margin: 0;
+  margin-right: 1ex;
+}
