@@ -16,8 +16,6 @@ module ApplicationHelper
         <input name="item_quantity_1" type="hidden" value="1"/>
         <input name="item_price_1" type="hidden" value="37.99"/>
         <input name="item_currency_1" type="hidden" value="USD"/>
-        <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="sz6g5PJRRYhKMCVGtLRV3RWoaRKfrDvLGk5JLqUqGgY="/>
-        <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
         <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
         <input name="_charset_" type="hidden" value="utf-8"/>
         <div style="text-align:center">
