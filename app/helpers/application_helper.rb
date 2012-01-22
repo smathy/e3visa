@@ -29,4 +29,8 @@ module ApplicationHelper
   def letter_date
     Time.now.strftime '%A, %B %d'
   end
+
+  def book_title
+    "“Moving to the USA”"
+  end
 end
