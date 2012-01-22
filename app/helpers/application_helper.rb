@@ -14,7 +14,7 @@ module ApplicationHelper
         <input name="item_name_1" type="hidden" value="Moving to the USA"/>
         <input name="item_description_1" type="hidden" value="The ultimate guidebook that will lead you through all the steps, hand in hand, to live permanently in the United States."/>
         <input name="item_quantity_1" type="hidden" value="1"/>
-        <input name="item_price_1" type="hidden" value="37.99"/>
+        <input name="item_price_1" type="hidden" value="#{book_price}"/>
         <input name="item_currency_1" type="hidden" value="USD"/>
         <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://e3visa.me/2NJPr7HPDLKuePJWAkYr.pdf"/>
         <input name="_charset_" type="hidden" value="utf-8"/>
@@ -32,5 +32,17 @@ module ApplicationHelper
 
   def book_title
     "“Moving to the USA”"
+  end
+
+  def book_price
+    37.99
+  end
+
+  def original_book_price
+    49.95
+  end
+
+  def price_output
+    "<strike>$#{original_book_price}</strike> <b>$#{book_price}</b>".html_safe
   end
 end

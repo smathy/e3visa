@@ -227,14 +227,12 @@ If you have got this far, then clearly there is something bugging you...</p>
 <p>Then, what are you waiting for?</p>
 
 <p><b>Get yourself a copy of <%= book_title %> right now -- the price is </b>
-<strike>49.95</strike><b> $37.99 -- and see what you will discover
-  inside...</b></p>
+<%= price_output %><b> -- and see what you will discover inside...</b></p>
 
 <%= google_checkout "arrow_gif.gif" %>
 
   <p style="text-align: center">
-  <b>Just </b><strike>$49.95</strike><b>
-      $37.99</b></p>
+  <b>Just </b><%= price_output %></p>
 
 <%= google_checkout %>
 
